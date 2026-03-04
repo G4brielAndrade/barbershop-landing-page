@@ -1,2 +1,6 @@
-# barbershop-landing-page
-Landing page for a modern barbershop with appointment integration via WhatsApp.
+### 🚀 Featured Projects
+
+💈 **Barbershop Landing Page**  
+Modern landing page with WhatsApp appointment integration.
+
+🔗 https://github.com/G4brielAndrade/barbershop-landing-page
