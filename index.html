@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Old Style Barbearia | Corte Clássico, Barba & Navalha</title>
+  <meta name="description" content="Old Style Barbearia: visual clássico, acabamento premium. Agende corte, barba, toalha quente e combos." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <header class="header" id="header">
+    <div class="header__line" aria-hidden="true"></div>
+
+    <div class="container header__inner">
+      <a class="brand" href="#inicio" aria-label="Ir para o início">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" width="28" height="28" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <path d="M20 18l24 24" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            <path d="M44 18L20 42" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            <path d="M16 22c4-5 9-8 16-8s12 3 16 8" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            <path d="M16 38c4 5 9 8 16 8s12-3 16-8" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            <path d="M49 44l-6 6" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            <path d="M46 47l5 5" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand__text">
+          <span class="brand__name">Old Style</span>
+          <span class="brand__sub">barbearia</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <a class="nav__link" href="#inicio">Home</a>
+        <a class="nav__link" href="#servicos">Serviços</a>
+        <a class="nav__link" href="#time">Time</a>
+        <a class="nav__link" href="#clientes">Clientes</a>
+        <a class="nav__link" href="#horarios">Horários</a>
+        <a class="nav__link" href="#contato">Contato</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="btn btn--gold" id="openBooking">Agendar</button>
+
+        <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="drawer">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="drawer" id="drawer" aria-hidden="true">
+      <div class="drawer__panel" role="dialog" aria-label="Menu">
+        <div class="drawer__top">
+          <span class="drawer__title">Menu</span>
+          <button class="icon-btn" id="closeDrawer" aria-label="Fechar">✕</button>
+        </div>
+        <a class="drawer__link" href="#inicio">Home</a>
+        <a class="drawer__link" href="#servicos">Serviços</a>
+        <a class="drawer__link" href="#time">Time</a>
+        <a class="drawer__link" href="#clientes">Clientes</a>
+        <a class="drawer__link" href="#horarios">Horários</a>
+        <a class="drawer__link" href="#contato">Contato</a>
+        <button class="btn btn--gold drawer__cta" id="openBooking2">Agendar agora</button>
+      </div>
+      <div class="drawer__backdrop" id="drawerBackdrop" aria-hidden="true"></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__shade" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <p class="kicker">
+            <span class="kicker__icon" aria-hidden="true">✦</span>
+            Atendimento premium • Navalha • Toalha quente • Diadema/SP
+          </p>
+
+          <h1 class="hero__title">
+            Corte clássico com <span class="gold">acabamento</span> impecável
+          </h1>
+
+          <p class="hero__subtitle">
+            Um ambiente sofisticado, técnicas tradicionais e um resultado moderno.
+            Chegue como quiser — saia pronto.
+          </p>
+
+          <div class="hero__actions">
+            <button class="btn btn--gold btn--big" id="openBooking3">Agendar horário</button>
+            <a class="btn btn--ghost btn--big" href="#servicos">Ver serviços</a>
+          </div>
+
+          <div class="hero__stats" aria-label="Destaques">
+            <div class="stat">
+              <strong>4.9★</strong>
+              <span>avaliações reais</span>
+            </div>
+            <div class="stat">
+              <strong>Desde 2018</strong>
+              <span>tradição & estilo</span>
+            </div>
+            <div class="stat">
+              <strong>Higienização</strong>
+              <span>processo completo</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__card reveal" aria-hidden="true">
+          <div class="hero__cardTop">
+            <span class="pill">Old Style Experience</span>
+            <span class="divider"></span>
+            <span class="pill pill--muted">Agende online</span>
+          </div>
+          <div class="hero__cardBody">
+            <div class="feature">
+              <span class="feature__icon">✂</span>
+              <div>
+                <strong>Corte Premium</strong>
+                <p>Fade, social, tesoura e finalização</p>
+              </div>
+            </div>
+            <div class="feature">
+              <span class="feature__icon">🪒</span>
+              <div>
+                <strong>Barba + Toalha quente</strong>
+                <p>Navalha, hidratação e alinhamento</p>
+              </div>
+            </div>
+            <div class="feature">
+              <span class="feature__icon">♟</span>
+              <div>
+                <strong>Visagismo</strong>
+                <p>Indicação do estilo ideal pra você</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="servicos">
+      <div class="container">
+        <div class="section__head">
+          <div class="reveal">
+            <p class="section__kicker">✦ Popular Services</p>
+            <h2 class="section__title">Serviços populares</h2>
+            <p class="section__sub">Escolha seu estilo. O resto é com a gente.</p>
+          </div>
+          <button class="btn btn--ghost reveal" id="shuffleCards">Aleatorizar</button>
+        </div>
+
+        <div class="cards" id="serviceCards">
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">✂</div>
+            <h3>Corte Premium</h3>
+            <p>Consultoria rápida + técnica precisa e finalização com produto ideal.</p>
+            <div class="card__meta">
+              <span class="price">R$ 55</span>
+              <span class="tag">35–45 min</span>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">🪒</div>
+            <h3>Barba + Toalha Quente</h3>
+            <p>Toalha quente, navalha, hidratação e alinhamento impecável.</p>
+            <div class="card__meta">
+              <span class="price">R$ 45</span>
+              <span class="tag">25–35 min</span>
+            </div>
+          </article>
+
+          <article class="card card--featured reveal">
+            <div class="card__icon" aria-hidden="true">★</div>
+            <h3>Combo Corte + Barba</h3>
+            <p>O pacote completo: visual clássico com acabamento moderno.</p>
+            <div class="card__meta">
+              <span class="price">R$ 90</span>
+              <span class="tag tag--gold">Mais pedido</span>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">✦</div>
+            <h3>Pezinho + Sobrancelha</h3>
+            <p>Detalhes que levantam o visual: limpeza e alinhamento.</p>
+            <div class="card__meta">
+              <span class="price">R$ 20</span>
+              <span class="tag">10–15 min</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="time">
+      <div class="container">
+        <div class="section__head">
+          <div class="reveal">
+            <p class="section__kicker">✦ Our Experts Team</p>
+            <h2 class="section__title">Nosso time</h2>
+            <p class="section__sub">Profissionais focados em técnica, cuidado e consistência.</p>
+          </div>
+        </div>
+
+        <div class="team">
+          <article class="member member--rafa reveal">
+            <div class="member__photo" role="img" aria-label="Rafa Navalha"></div>
+            <div class="member__body">
+              <h3>Rafa “Navalha”</h3>
+              <p>Especialista em barba, toalha quente e acabamento.</p>
+              <div class="chips">
+                <span class="chip">Barba</span>
+                <span class="chip">Navalha</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="member member--diego reveal">
+            <div class="member__photo" role="img" aria-label="Diego Fade"></div>
+            <div class="member__body">
+              <h3>Diego Fade</h3>
+              <p>Degradê, freestyle, social e tesoura.</p>
+              <div class="chips">
+                <span class="chip">Fade</span>
+                <span class="chip">Tesoura</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="member member--luiza reveal">
+            <div class="member__photo" role="img" aria-label="Luiza Style"></div>
+            <div class="member__body">
+              <h3>Luiza Style</h3>
+              <p>Visagismo, finalização e indicação de produtos.</p>
+              <div class="chips">
+                <span class="chip">Visagismo</span>
+                <span class="chip">Produtos</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="clientes">
+      <div class="container">
+        <div class="section__head">
+          <div class="reveal">
+            <p class="section__kicker">✦ Our Happy Clients</p>
+            <h2 class="section__title">Resultados</h2>
+            <p class="section__sub">Clique nas imagens para ver em tela cheia.</p>
+          </div>
+
+          <div class="sliderControls reveal">
+            <button class="icon-btn" id="prev" aria-label="Anterior">←</button>
+            <button class="icon-btn" id="next" aria-label="Próximo">→</button>
+          </div>
+        </div>
+
+        <div class="slider reveal" aria-roledescription="carousel">
+          <div class="slider__track" id="track">
+            <figure class="slide">
+              <img
+                src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=1400&q=70"
+                alt="Corte masculino estilo clássico"
+                loading="lazy"
+              />
+              <figcaption>Corte clássico + acabamento</figcaption>
+            </figure>
+
+            <figure class="slide">
+              <img
+                src="https://images.unsplash.com/photo-1532710093739-9470acff878f?auto=format&fit=crop&w=1400&q=70"
+                alt="Barba alinhada com navalha"
+                loading="lazy"
+              />
+              <figcaption>Barba alinhada + toalha quente</figcaption>
+            </figure>
+
+            <figure class="slide">
+              <img
+                src="https://images.unsplash.com/photo-1621607512214-68297480165e?auto=format&fit=crop&w=1400&q=70"
+                alt="Detalhes de barbearia com ferramentas"
+                loading="lazy"
+              />
+              <figcaption>Ambiente & experiência</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- GALERIA CLICÁVEL (LIGHTBOX) -->
+        <div class="gallery reveal" id="gallery">
+          <button class="gallery__item is-active" type="button" data-full="https://images.unsplash.com/photo-1532710093739-9470acff878f?auto=format&fit=crop&w=1800&q=70">
+            <img src="https://images.unsplash.com/photo-1532710093739-9470acff878f?auto=format&fit=crop&w=900&q=70" alt="Barba com toalha quente" loading="lazy">
+          </button>
+
+          <button class="gallery__item" type="button" data-full="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=1800&q=70">
+            <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=900&q=70" alt="Corte masculino moderno" loading="lazy">
+          </button>
+
+          <button class="gallery__item" type="button" data-full="https://images.unsplash.com/photo-1596728325488-58c87691e9af?auto=format&fit=crop&w=1800&q=70">
+            <img src="https://images.unsplash.com/photo-1596728325488-58c87691e9af?auto=format&fit=crop&w=900&q=70" alt="Ferramentas de barbearia" loading="lazy">
+          </button>
+
+          <button class="gallery__item" type="button" data-full="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=1800&q=70">
+            <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=900&q=70" alt="Camarada com jaqueta" loading="lazy">
+          </button>
+
+          <button class="gallery__item" type="button" data-full="https://images.unsplash.com/photo-1520975916090-3105956dac38?auto=format&fit=crop&w=1800&q=70">
+            <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38?auto=format&fit=crop&w=900&q=70" alt="Barbeiro trabalhando" loading="lazy">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="horarios">
+      <div class="container">
+        <div class="section__head">
+          <div class="reveal">
+            <p class="section__kicker">✦ We Are Available</p>
+            <h2 class="section__title">Horários</h2>
+            <p class="section__sub">Agendamento rápido. Encaixes conforme disponibilidade.</p>
+          </div>
+        </div>
+
+        <div class="hours">
+          <div class="hours__card reveal">
+            <h3>Opening Time</h3>
+            <div class="hours__row"><span>Segunda — Quinta</span><strong>10:00 — 20:00</strong></div>
+            <div class="hours__row"><span>Sexta — Sábado</span><strong>10:00 — 21:00</strong></div>
+            <div class="hours__row"><span>Domingo</span><strong>Fechado</strong></div>
+            <button class="btn btn--gold hours__cta openBookingAny">Agendar</button>
+          </div>
+
+          <div class="hours__banner reveal" aria-hidden="true">
+            <div class="hours__bannerShade"></div>
+            <div class="hours__bannerText">
+              <p class="section__kicker">✦ Old Style</p>
+              <h3>Visual clássico</h3>
+              <p>Tradição, técnica e uma experiência premium do começo ao fim.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contato">
+      <div class="container">
+        <div class="section__head">
+          <div class="reveal">
+            <p class="section__kicker">✦ Contact Us</p>
+            <h2 class="section__title">Contato</h2>
+            <p class="section__sub">Envie mensagem ou agende em poucos cliques.</p>
+          </div>
+        </div>
+
+        <div class="contact">
+          <div class="contact__info reveal">
+            <div class="info">
+              <h3>Endereço</h3>
+              <p>Rua dos estudantes, 911 — Diadema/SP</p>
+            </div>
+            <div class="info">
+              <h3>WhatsApp</h3>
+              <p>(11) 998712728</p>
+            </div>
+            <div class="info">
+              <h3>Horário</h3>
+              <p>Seg–Sáb • 10h–20/21h</p>
+            </div>
+
+            <div class="map">
+              <iframe
+                title="Mapa"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps?q=Diadema%20SP&output=embed">
+              </iframe>
+            </div>
+          </div>
+
+          <form class="form reveal" id="contactForm" novalidate>
+            <div class="field">
+              <label for="name">Nome</label>
+              <input id="name" name="name" type="text" placeholder="Seu nome" required />
+              <small class="error" data-for="name"></small>
+            </div>
+
+            <div class="field">
+              <label for="phone">WhatsApp</label>
+              <input id="phone" name="phone" type="tel" placeholder="(11) 99999-9999" required />
+              <small class="error" data-for="phone"></small>
+            </div>
+
+            <div class="field">
+              <label for="service">Serviço</label>
+              <select id="service" name="service" required>
+                <option value="">Selecione…</option>
+                <option>Corte Premium</option>
+                <option>Barba + Toalha Quente</option>
+                <option>Combo Corte + Barba</option>
+                <option>Pezinho + Sobrancelha</option>
+              </select>
+              <small class="error" data-for="service"></small>
+            </div>
+
+            <div class="field">
+              <label for="msg">Mensagem</label>
+              <textarea id="msg" name="msg" rows="4" placeholder="Ex: queria um degradê médio, sábado às 14h…"></textarea>
+            </div>
+
+            <button class="btn btn--gold" type="submit">Enviar</button>
+            <p class="muted small">Simulação: abre WhatsApp com a mensagem pronta.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="brandMini" aria-hidden="true">✦</span>
+        <div>
+          <strong>Old Style Barbearia</strong>
+          <p class="muted small">© <span id="year"></span> — Desenvolvido por Gabriel Andrade.</p>
+        </div>
+      </div>
+
+      <div class="footer__links">
+        <a href="#inicio">Topo</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="toTop" id="toTop" aria-label="Voltar ao topo">↑</button>
+
+  <!-- WhatsApp Floating -->
+  <a class="wapp" id="wappFloat" href="#" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp">
+    <span class="wapp__icon" aria-hidden="true">✆</span>
+    <span class="wapp__tip">Chamar no WhatsApp</span>
+  </a>
+
+  <!-- Booking Modal -->
+  <div class="modal" id="bookingModal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Agendar horário">
+    <div class="modal__panel" role="document">
+      <div class="modal__top">
+        <h3>Agendar horário</h3>
+        <button class="icon-btn" id="closeBooking" aria-label="Fechar">✕</button>
+      </div>
+
+      <form class="modal__form" id="bookingForm" novalidate>
+        <div class="grid2">
+          <div class="field">
+            <label for="bName">Nome</label>
+            <input id="bName" name="bName" type="text" required placeholder="Seu nome" />
+            <small class="error" data-for="bName"></small>
+          </div>
+
+          <div class="field">
+            <label for="bPhone">WhatsApp</label>
+            <input id="bPhone" name="bPhone" type="tel" required placeholder="(11) 99999-9999" />
+            <small class="error" data-for="bPhone"></small>
+          </div>
+
+          <div class="field">
+            <label for="bService">Serviço</label>
+            <select id="bService" name="bService" required>
+              <option value="">Selecione…</option>
+              <option>Combo Corte + Barba</option>
+              <option>Corte Premium</option>
+              <option>Barba + Toalha Quente</option>
+              <option>Pezinho + Sobrancelha</option>
+            </select>
+            <small class="error" data-for="bService"></small>
+          </div>
+
+          <div class="field">
+            <label for="bDate">Data</label>
+            <input id="bDate" name="bDate" type="date" required />
+            <small class="error" data-for="bDate"></small>
+          </div>
+
+          <div class="field">
+            <label for="bTime">Horário</label>
+            <input id="bTime" name="bTime" type="time" required />
+            <small class="error" data-for="bTime"></small>
+          </div>
+
+          <div class="field">
+            <label for="bNote">Observações</label>
+            <input id="bNote" name="bNote" type="text" placeholder="Ex: degradê médio" />
+          </div>
+        </div>
+
+        <button class="btn btn--gold" type="submit">Confirmar</button>
+        <p class="muted small">Simulação: abre WhatsApp com a mensagem pronta.</p>
+      </form>
+    </div>
+    <div class="modal__backdrop" id="bookingBackdrop" aria-hidden="true"></div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox__panel" role="dialog" aria-modal="true" aria-label="Imagem em tela cheia">
+      <button class="icon-btn lightbox__close" id="lbClose" aria-label="Fechar">✕</button>
+      <button class="icon-btn lightbox__nav" id="lbPrev" aria-label="Anterior">←</button>
+      <img id="lbImg" alt="Imagem ampliada" />
+      <button class="icon-btn lightbox__nav" id="lbNext" aria-label="Próximo">→</button>
+      <p class="lightbox__hint muted small">Use ← → para navegar • ESC para fechar</p>
+    </div>
+    <div class="lightbox__backdrop" id="lbBackdrop" aria-hidden="true"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
